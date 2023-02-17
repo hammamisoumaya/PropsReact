@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Checkpoint from './Checkpoint';
 import Chek from './Chek';
@@ -16,10 +16,10 @@ function App() {
     <div className="App">
       <Checkpoint
       //props de type string
-      title={"introduction au props"}
+      title={"Introduction au PROPS"}
 
       //props number
-     age={2345}
+     age={30}
 
      //props array
 array={array}
@@ -29,10 +29,14 @@ handelAlert={handelAlert}
       />
 
 <hr/>
-<Chek name={"soumaya"} age={27} profession ={"developpeuse"}/>
-<Chek name={"soumaya"} age={27} profession ={"developpeuse"}/>
-<Chek name={"soumaya"} age={27} profession ={"developpeuse"}/>
-<Chek name={"soumaya"} age={27} profession ={"developpeuse"}/>
+<Chek name={"Soumaya"} age={27} profession ={"developpeuse"}/>
+<hr/>
+<Chek name={"Mariem"} age={27} profession ={"developpeuse"}/>
+<hr/>
+<Chek name={"Baha"} age={27} profession ={"developpeuse"}/>
+<hr/>
+<Chek name={"Francise"} age={27} profession ={"developpeuse"}/>
+<hr/>
 
 
 
@@ -42,7 +46,7 @@ handelAlert={handelAlert}
 
 
 <h1> hello,i'am a child prop</h1>
-<h1> hello,i'am a child too</h1>
+<p> hello,i'am a child too</p>
 
 </div>
 </Che>

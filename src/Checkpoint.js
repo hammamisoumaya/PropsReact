@@ -2,7 +2,7 @@ import React from 'react'
 
 const Checkpoint = ({title,age,array,handelAlert}) => {
   return (
-    <div>Checkpoint
+    <div>
 <h1>{title}</h1>
 <h1>{age}</h1>
 <h1>{array}</h1>
