@@ -3,6 +3,10 @@ import './App.css';
 import Checkpoint from './Checkpoint';
 import Chek from './Chek';
 import Che from './Che';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Card from 'react-bootstrap/Card';
+import ListGroup from 'react-bootstrap/ListGroup';
+
 //tableau
 const array=[11,124,23456,12790]
 
@@ -13,6 +17,7 @@ function App() {
     alert(`hi,my name is ${name}`)
   }
   return (
+    
     <div className="App">
       <Checkpoint
       //props de type string
@@ -27,29 +32,27 @@ array={array}
 handelAlert={handelAlert}
    
       />
-
-<hr/>
-<Chek name={"Soumaya"} age={27} profession ={"developpeuse"}/>
-<hr/>
-<Chek name={"Mariem"} age={27} profession ={"developpeuse"}/>
-<hr/>
-<Chek name={"Baha"} age={27} profession ={"developpeuse"}/>
-<hr/>
-<Chek name={"Francise"} age={27} profession ={"developpeuse"}/>
-<hr/>
+       <Card style={{ width: '18rem' }}>
+      <Card.Header>Featured</Card.Header>
+      <ListGroup variant="flush">
+        <ListGroup.Item><Chek name={"Soumaya"} age={27} profession ={"Developpeuse"}/></ListGroup.Item>
+        <ListGroup.Item><Chek name={"Mariem"} age={27} profession ={"Developpeuse"}/></ListGroup.Item>
+        <ListGroup.Item><Chek name={"Baha"} age={27} profession ={"Developpeur"}/></ListGroup.Item>
+      </ListGroup>
+    </Card>
 
 
 
 
-<Che name="test"> 
+
 <div>
 
 
-<h1> hello,i'am a child prop</h1>
-<p> hello,i'am a child too</p>
+<h1> Hello,i'am a child prop</h1>
+<p> Hello,i'am a child too</p>
 
 </div>
-</Che>
+
 
   
     </div>
